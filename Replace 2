@@ -1,0 +1,26 @@
+s=input()
+u=[]
+l=[]
+d=[]
+s=[]
+for i in s:
+	if(i.isupper()):
+		u=u+1
+		u.append(i)
+	elif(i.islower()):
+		l=l+1
+		l.append(i)
+	elif(i.isdigit()):
+		d=d+1
+		d.append(i)
+	else:
+		s=s+1
+		s.append(i)
+print(u)
+print(l)
+print(d)
+print(s)
+if (u==1 and l==1 and d==1 and s==1):
+	print('password is valied')
+else:
+	print('password is not valied')
